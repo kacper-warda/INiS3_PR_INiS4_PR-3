@@ -17,5 +17,14 @@ public class Main {
         Phone iPhone = new Phone();
         iPhone.screenSize = 4.5;
         iPhone.operationSystem = "ios";
+
+
+        Human me = new Human();
+        me.firstName = "Kacper";
+        me.lastName = "Warda";
+        me.pet = dog;
+
+        System.out.println("Zwierzak nazwa się: " + me.pet.name);
+
     }
 }
