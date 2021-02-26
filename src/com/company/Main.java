@@ -3,10 +3,7 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        Animal dog = new Animal();
-        dog.species = "dog";
-        dog.name = "Haiku";
-        dog.weight = 8.0;
+        Animal dog = new Animal("dog", 20.0, "Szarik");
         dog.feed();
 
         dog.feed();
@@ -14,9 +11,6 @@ public class Main {
         dog.feed();
         dog.feed();
 
-        Phone iPhone = new Phone();
-        iPhone.screenSize = 4.5;
-        iPhone.operationSystem = "ios";
 
 
         Human me = new Human();
