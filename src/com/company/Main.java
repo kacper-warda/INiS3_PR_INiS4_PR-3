@@ -1,24 +1,26 @@
 package com.company;
 
+import java.text.DecimalFormat;
+
 public class Main {
 
     public static void main(String[] args) {
-        Animal dog = new Animal("dog", 20.0, "Szarik");
-        dog.feed();
 
-        dog.feed();
-        dog.feed();
-        dog.feed();
-        dog.feed();
+        Phone iPhone = new Phone("Apple", "S6", 4.0, "iOS");
 
+        Human kacper = new Human();
 
+        kacper.pet = new Animal("dog");
+        kacper.car = new Car("Fiat", "Multipla");
 
-        Human me = new Human();
-        me.firstName = "Kacper";
-        me.lastName = "Warda";
-        me.pet = dog;
+        //formatowanie liczb
+        double value = 200.3456;
+        System.out.printf("Value: %.2f", value);
 
-        System.out.println("Zwierzak nazwa się: " + me.pet.name);
+        System.out.println("Value: " + String.format("%.2f", value));
+
+        DecimalFormat formatter = new DecimalFormat("####0.00");
+        System.out.println("Value: " + formatter.format(value));
 
     }
 }
