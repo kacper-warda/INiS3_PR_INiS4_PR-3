@@ -6,7 +6,7 @@ public class Animal {
     final public String species;
     public String name;
     public File pic;
-    private Double weight;
+    protected Double weight;
 
     static final public double DEFAULT_ANIMAL_WEIGHT = 1.0;
     static final public double DEFAULT_DOG_WEIGHT = 3.0;
@@ -35,6 +35,7 @@ public class Animal {
 
 
     void feed() {
+        System.out.println("TROLOLOLOLOLO");
         if (this.weight <= 0) {
             System.out.println("SORRY, TO LATE");
         } else {

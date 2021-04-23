@@ -1,26 +1,17 @@
 package com.company;
 
-import java.text.DecimalFormat;
+import com.company.device.Phone;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Phone iPhone = new Phone("Apple", "S6", 4.0, "iOS");
 
-        Human kacper = new Human();
+        Phone iphone = new Phone("apple", "6s", 4.5, "iOS", 2016);
+        iphone.turnOn();
+        System.out.println(iphone.model);
+        System.out.println(iphone.producer);
 
-        kacper.pet = new Animal("dog");
-        kacper.car = new Car("Fiat", "Multipla");
-
-        //formatowanie liczb
-        double value = 200.3456;
-        System.out.printf("Value: %.2f", value);
-
-        System.out.println("Value: " + String.format("%.2f", value));
-
-        DecimalFormat formatter = new DecimalFormat("####0.00");
-        System.out.println("Value: " + formatter.format(value));
 
     }
 }
